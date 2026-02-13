@@ -1,0 +1,144 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  --pink:#e15c7a;
+  --green:#204b2c;
+}
+
+
+.top-bar{
+  background:#c9c88a;
+  text-align:center;
+  padding:6px 20px;
+  font-size:12px;
+  letter-spacing:1px;
+}
+
+.navbar{
+  background:var(--pink);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 40px;
+  color:white;
+}
+
+.navbar a{
+  text-decoration:none;
+  color:white;
+  font-size:16px;
+}
+
+.nav-center h1{
+  font-size:26px;
+  font-weight:500;
+}
+
+.nav-left,
+.nav-right{
+  width:30%;
+}
+
+.nav-center{
+  width:40%;
+  text-align:center;
+}
+
+main{
+  max-width:1200px;
+  margin:40px auto;
+  padding:0 20px;
+}
+
+.florgen{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:40px;
+  gap:40px;
+}
+
+.florgen div{
+  flex:1;
+}
+
+.florgen img{
+  width:280px;
+  height:280px;
+  object-fit:cover;
+}
+
+.florgen h3{
+  color:var(--pink);
+  font-size:20px;
+  margin-bottom:10px;
+}
+
+.florgen span{
+  display:block;
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+.florgen p{
+  font-size:14px;
+  color:#555;
+}
+
+.side-cards{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  margin-top:60px;
+}
+
+.card{
+  background:var(--pink);
+  color:white;
+  padding:25px 40px;
+  border-radius:10px;
+  text-align:center;
+  min-width:250px;
+}
+
+.card h2{
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+
+.card strong{
+  display:block;
+  margin-top:10px;
+}
+
+
+.footer{
+  background:var(--green);
+  height:60px;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  margin-top:80px;
+}
+
+.marquee{
+  width:100%;
+  white-space:nowrap;
+  overflow:hidden;
+}
+
+.marquee span{
+  display:inline-block;
+  padding-left:100%;
+  color:#fff;
+  animation:scroll-text 15s linear infinite;
+}
+
+@keyframes scroll-text{
+  from{ transform:translateX(0); }
+  to{ transform:translateX(-100%); }
+}
